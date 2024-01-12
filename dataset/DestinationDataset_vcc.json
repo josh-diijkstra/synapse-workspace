@@ -1,0 +1,21 @@
+{
+	"name": "DestinationDataset_vcc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SecondaryADLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DR"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "datalakepoceunorth"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

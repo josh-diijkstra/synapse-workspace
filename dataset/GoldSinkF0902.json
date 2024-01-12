@@ -1,0 +1,25 @@
+{
+	"name": "GoldSinkF0902",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PrimaryADLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ADLS_Sinks"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "F0902.parquet",
+				"folderPath": "gold",
+				"fileSystem": "datalakepoceuwest"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

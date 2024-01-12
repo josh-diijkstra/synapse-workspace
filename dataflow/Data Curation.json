@@ -1,0 +1,71 @@
+{
+	"name": "Data Curation",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "SilverSinkF0902",
+						"type": "DatasetReference"
+					},
+					"name": "SilverF0902"
+				},
+				{
+					"dataset": {
+						"referenceName": "SilverSinkF0911",
+						"type": "DatasetReference"
+					},
+					"name": "SilverF0911"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "GoldSinkF0902",
+						"type": "DatasetReference"
+					},
+					"name": "GoldSinkF0902"
+				},
+				{
+					"dataset": {
+						"referenceName": "GoldSinkF0911",
+						"type": "DatasetReference"
+					},
+					"name": "GoldSinkF0911"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     format: 'parquet') ~> SilverF0902",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     format: 'parquet') ~> SilverF0911",
+				"SilverF0902 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'parquet',",
+				"     partitionFileNames:['F0902.parquet'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> GoldSinkF0902",
+				"SilverF0911 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'parquet',",
+				"     partitionFileNames:['F0911.parquet'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> GoldSinkF0911"
+			]
+		}
+	}
+}

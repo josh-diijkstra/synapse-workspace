@@ -1,0 +1,2094 @@
+{
+	"name": "SQL_Pool_Load",
+	"properties": {
+		"activities": [
+			{
+				"name": "SQL_Pool_Load_F0902",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "datalakepoceuwest/gold/"
+					},
+					{
+						"name": "Destination",
+						"value": ".AzureBlobFSFile"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
+						}
+					},
+					"sink": {
+						"type": "SqlPoolSink",
+						"allowCopyCommand": true
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "GBAID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBAID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBCTRY",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GBCTRY",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GBFY",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GBFY",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GBFQ",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBFQ",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBLT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBLT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBSBL",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBSBL",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBCO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBCO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAPYC",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAPYC",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN01",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN01",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN02",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN02",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN03",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN03",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN04",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN04",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN05",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN05",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN06",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN06",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN07",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN07",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN08",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN08",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN09",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN09",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN10",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN10",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN11",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN11",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN12",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN12",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN13",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN13",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAN14",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAN14",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAPYN",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAPYN",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAWTD",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAWTD",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBBORG",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBBORG",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBPOU",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBPOU",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBPC",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GBPC",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GBTKER",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBTKER",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBBREQ",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBBREQ",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBBAPR",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBBAPR",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBMCU",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBMCU",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBOBJ",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBOBJ",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBSUB",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBSUB",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBUSER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBUSER",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBPID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBPID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBUPMJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GBUPMJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GBJOBN",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBJOBN",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBSBLT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBSBLT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBUPMT",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GBUPMT",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GBCRCD",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBCRCD",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBCRCX",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBCRCX",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBPRGF",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GBPRGF",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND01",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND01",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND02",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND02",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND03",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND03",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND04",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND04",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND05",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND05",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND06",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND06",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND07",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND07",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND08",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND08",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND09",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND09",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND10",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND10",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND11",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND11",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND12",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND12",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND13",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND13",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GBAND14",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GBAND14",
+									"type": "Decimal"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "GoldSinkF0902",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SqlPoolTableF0902",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "SQL_Pool_Load_F0911",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "datalakepoceuwest/gold/"
+					},
+					{
+						"name": "Destination",
+						"value": ".AzureBlobFSFile"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
+						}
+					},
+					"sink": {
+						"type": "SqlPoolSink",
+						"allowCopyCommand": true
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "GLKCO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLKCO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDCT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLDCT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDOC",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLDOC",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDGJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLDGJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLJELN",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLJELN",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLEXTL",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLEXTL",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPOST",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPOST",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLICU",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLICU",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLICUT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLICUT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDICJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLDICJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDSYJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLDSYJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLTICU",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLTICU",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLANI",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLANI",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLAM",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLAM",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLAID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLAID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLMCU",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLMCU",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLOBJ",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLOBJ",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLSUB",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLSUB",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLSBL",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLSBL",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLSBLT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLSBLT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLLT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLLT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPN",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLPN",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCTRY",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLCTRY",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLFY",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLFY",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLFQ",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLFQ",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCRCD",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCRCD",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCRR",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLCRR",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLHCRR",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLHCRR",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLHDGJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLHDGJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLAA",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GLAA",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GLU",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GLU",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GLUM",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLUM",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLGLC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLGLC",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLRE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLRE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLEXA",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLEXA",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLEXR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLEXR",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLR1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLR1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLR2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLR2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLR3",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLR3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLSFX",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLSFX",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLODOC",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLODOC",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLODCT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLODCT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLOSFX",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLOSFX",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPKCO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPKCO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLOKCO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLOKCO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPDCT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPDCT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLAN8",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLAN8",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCN",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCN",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDKJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLDKJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDKC",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLDKC",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLASID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLASID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLBRE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLBRE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLRCND",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLRCND",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLSUMM",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLSUMM",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPRGE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPRGE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLTNN",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLTNN",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT3",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT4",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT5",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT5",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT6",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT6",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT7",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT7",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT8",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT8",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT9",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT9",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALT0",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALT0",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTU",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTU",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTV",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTV",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTW",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTW",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTX",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTX",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTZ",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTZ",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDLNA",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLDLNA",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCFF1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCFF1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCFF2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCFF2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLASM",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLASM",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLBC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLBC",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLVINV",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLVINV",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLIVD",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLIVD",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLWR01",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLWR01",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPSFX",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPSFX",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDCTO",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLDCTO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLLNID",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GLLNID",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GLWY",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLWY",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLWN",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLWN",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLFNLP",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLFNLP",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLOPSQ",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GLOPSQ",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GLJBCD",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLJBCD",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLJBST",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLJBST",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLHMCU",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLHMCU",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDOI",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLDOI",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLALTY",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLALTY",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDSVJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLDSVJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLTORG",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLTORG",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLREG",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLREG#",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPYID",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLPYID",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLUSER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLUSER",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLJOBN",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLJOBN",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLUPMJ",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "GLUPMJ",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "GLUPMT",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLUPMT",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABR1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABR1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABR2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABR2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABR3",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABR3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABR4",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABR4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABT1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABT1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABT2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABT2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABT3",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABT3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLABT4",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLABT4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLITM",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLITM",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM01",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM01",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM02",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM02",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM03",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM03",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM04",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM04",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM05",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM05",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM06",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM06",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM07",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM07",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM08",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM08",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM09",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM09",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPM10",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPM10",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLBCRC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLBCRC",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCRRM",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCRRM",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLPRGF",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLPRGF",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLTXA1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLTXA1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLEXR1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLEXR1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLTXITM",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLTXITM",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLACTB",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLACTB",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLGPF1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLGPF1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLACR",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GLACR",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GLDLNID",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "GLDLNID",
+									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"name": "GLCKNU",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLCKNU",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLBUPC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLBUPC",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLAHBU",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLAHBU",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLEPGC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLEPGC",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLJPGC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLJPGC",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "GLRC5",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLRC5",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLSFXE",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "GLSFXE",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "GLOFM",
+									"type": "String"
+								},
+								"sink": {
+									"name": "GLOFM",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "GoldSinkF0911",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SqlPoolTableF0911",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-11-29T12:22:51Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

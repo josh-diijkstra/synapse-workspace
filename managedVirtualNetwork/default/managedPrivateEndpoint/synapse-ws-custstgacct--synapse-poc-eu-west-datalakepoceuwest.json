@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-custstgacct--synapse-poc-eu-west-datalakepoceuwest",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/6ca9b374-8807-4361-86d1-b6326b91e2bb/resourceGroups/rg-dataengineering-poc/providers/Microsoft.Storage/storageAccounts/datalakepoceuwest",
+		"groupId": "dfs",
+		"fqdns": [
+			"datalakepoceuwest.dfs.core.windows.net"
+		]
+	}
+}

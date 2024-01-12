@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [GBAID]\n,[GBCTRY]\n,[GBFY]\n,[GBFQ]\n,[GBLT]\n,[GBSBL]\n,[GBCO]\n,[GBAPYC]\n,[GBAN01]\n,[GBAN02]\n,[GBAN03]\n,[GBAN04]\n,[GBAN05]\n,[GBAN06]\n,[GBAN07]\n,[GBAN08]\n,[GBAN09]\n,[GBAN10]\n,[GBAN11]\n,[GBAN12]\n,[GBAN13]\n,[GBAN14]\n,[GBAPYN]\n,[GBAWTD]\n,[GBBORG]\n,[GBPOU]\n,[GBPC]\n,[GBTKER]\n,[GBBREQ]\n,[GBBAPR]\n,[GBMCU]\n,[GBOBJ]\n,[GBSUB]\n,[GBUSER]\n,[GBPID]\n,[GBUPMJ]\n,[GBJOBN]\n,[GBSBLT]\n,[GBUPMT]\n,[GBCRCD]\n,[GBCRCX]\n,[GBPRGF]\n,[GBAND01]\n,[GBAND02]\n,[GBAND03]\n,[GBAND04]\n,[GBAND05]\n,[GBAND06]\n,[GBAND07]\n,[GBAND08]\n,[GBAND09]\n,[GBAND10]\n,[GBAND11]\n,[GBAND12]\n,[GBAND13]\n,[GBAND14]\n FROM [dbo].[F0902]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pocsqlpooleuwest",
+				"poolName": "pocsqlpooleuwest"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

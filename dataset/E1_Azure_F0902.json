@@ -1,0 +1,320 @@
+{
+	"name": "E1_Azure_F0902",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "E1_AzureF0902",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "GBAID",
+				"type": "nchar"
+			},
+			{
+				"name": "GBCTRY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GBFY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GBFQ",
+				"type": "nchar"
+			},
+			{
+				"name": "GBLT",
+				"type": "nchar"
+			},
+			{
+				"name": "GBSBL",
+				"type": "nchar"
+			},
+			{
+				"name": "GBCO",
+				"type": "nchar"
+			},
+			{
+				"name": "GBAPYC",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN01",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN02",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN03",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN04",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN05",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN06",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN07",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN08",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN09",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN10",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN11",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN12",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN13",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAN14",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAPYN",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAWTD",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBBORG",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBPOU",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBPC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GBTKER",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBBREQ",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBBAPR",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBMCU",
+				"type": "nchar"
+			},
+			{
+				"name": "GBOBJ",
+				"type": "nchar"
+			},
+			{
+				"name": "GBSUB",
+				"type": "nchar"
+			},
+			{
+				"name": "GBUSER",
+				"type": "nchar"
+			},
+			{
+				"name": "GBPID",
+				"type": "nchar"
+			},
+			{
+				"name": "GBUPMJ",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 0
+			},
+			{
+				"name": "GBJOBN",
+				"type": "nchar"
+			},
+			{
+				"name": "GBSBLT",
+				"type": "nchar"
+			},
+			{
+				"name": "GBUPMT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GBCRCD",
+				"type": "nchar"
+			},
+			{
+				"name": "GBCRCX",
+				"type": "nchar"
+			},
+			{
+				"name": "GBPRGF",
+				"type": "nchar"
+			},
+			{
+				"name": "GBAND01",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND02",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND03",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND04",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND05",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND06",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND07",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND08",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND09",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND10",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND11",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND12",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND13",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GBAND14",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "F0902"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
