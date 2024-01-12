@@ -1,0 +1,17 @@
+{
+	"name": "CreateTableF0902",
+	"properties": {
+		"content": {
+			"query": "Drop Table [dbo].[F0902]\nCREATE TABLE [dbo].[F0902]\n(\n    GBAID NCHAR(8) NULL, -- Account ID\n    GBCTRY INT NULL, -- Century\n    GBFY INT NULL, -- Fiscal Year\n    GBFQ NCHAR(4) NULL, -- Fiscal Quarter (Obsolete)\n    GBLT NCHAR(2) NULL, -- Ledger Types\n    GBSBL NCHAR(8) NULL, -- Subledger - G/L\n    GBCO NCHAR(5) NULL, -- Company\n    GBAPYC DECIMAL(15,2) NULL, -- Amount - Beginning Balance/PYE Forward\n    GBAN01 DECIMAL(15,2) NULL, -- Amount - Net Posting 01\n    GBAN02 DECIMAL(15,2) NULL, -- Amount - Net Posting 02\n    GBAN03 DECIMAL(15,2) NULL, -- Amount - Net Posting 03\n    GBAN04 DECIMAL(15,2) NULL, -- Amount - Net Posting 04\n    GBAN05 DECIMAL(15,2) NULL, -- Amount - Net Posting 05\n    GBAN06 DECIMAL(15,2) NULL, -- Amount - Net Posting 06\n    GBAN07 DECIMAL(15,2) NULL, -- Amount - Net Posting 07\n    GBAN08 DECIMAL(15,2) NULL, -- Amount - Net Posting 08\n    GBAN09 DECIMAL(15,2) NULL, -- Amount - Net Posting 09\n    GBAN10 DECIMAL(15,2) NULL, -- Amount - Net Posting 10\n    GBAN11 DECIMAL(15,2) NULL, -- Amount - Net Posting 11\n    GBAN12 DECIMAL(15,2) NULL, -- Amount - Net Posting 12\n    GBAN13 DECIMAL(15,2) NULL, -- Amount - Net Posting 13\n    GBAN14 DECIMAL(15,2) NULL, -- Amount - Net Posting 14\n    GBAPYN DECIMAL(15,2) NULL, -- Amount - Prior Year Net Postings\n    GBAWTD DECIMAL(15,2) NULL, -- Amount - Week-to-Date\n    GBBORG DECIMAL(15,2) NULL, -- Amount - Original/Beginning Budget\n    GBPOU DECIMAL(15,2) NULL, -- Amount - Memo Budget Changes\n    GBPC INT NULL, -- Percent Complete\n    GBTKER DECIMAL(15,2) NULL, -- Amount - Memo Commitment Changes\n    GBBREQ DECIMAL(15,2) NULL, -- Budget - Requested\n    GBBAPR DECIMAL(15,2) NULL, -- Budget - Approved\n    GBMCU NCHAR(12) NULL, -- Business Unit\n    GBOBJ NCHAR(6) NULL, -- Object Account\n    GBSUB NCHAR(8) NULL, -- Subsidiary\n    GBUSER NCHAR(10) NULL, -- User ID\n    GBPID NCHAR(10) NULL, -- Program ID\n    GBUPMJ DATE NULL, -- Date - Updated\n    GBJOBN NCHAR(10) NULL, -- Work Station ID\n    GBSBLT NCHAR(1) NULL, -- Subledger Type\n    GBUPMT INT NULL, -- Time - Last Updated\n    GBCRCD NCHAR(3) NULL, -- Currency Code - From\n    GBCRCX NCHAR(3) NULL, -- Currency Code - Denominated In\n    GBPRGF NCHAR(1) NULL, -- Purge Flag\n    GBAND01 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 01\n    GBAND02 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 02\n    GBAND03 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 03\n    GBAND04 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 04\n    GBAND05 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 05\n    GBAND06 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 06\n    GBAND07 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 07\n    GBAND08 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 08\n    GBAND09 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 09\n    GBAND10 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 10\n    GBAND11 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 11\n    GBAND12 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 12\n    GBAND13 DECIMAL(15,2) NULL, -- Amount - Net Debit Posting 13\n    GBAND14 DECIMAL(15,2) NULL -- Amount - Net Debit Posting 14\n)\nWITH\n(\n    DISTRIBUTION = HASH (GBAID),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pocsqlpooleuwest",
+				"poolName": "pocsqlpooleuwest"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

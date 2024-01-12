@@ -1,0 +1,25 @@
+{
+	"name": "SilverSinkF0911",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PrimaryADLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ADLS_Sinks"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "F0911.parquet",
+				"folderPath": "silver",
+				"fileSystem": "datalakepoceuwest"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

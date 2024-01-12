@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [GLKCO]\n,[GLDCT]\n,[GLDOC]\n,[GLDGJ]\n,[GLJELN]\n,[GLEXTL]\n,[GLPOST]\n,[GLICU]\n,[GLICUT]\n,[GLDICJ]\n,[GLDSYJ]\n,[GLTICU]\n,[GLCO]\n,[GLANI]\n,[GLAM]\n,[GLAID]\n,[GLMCU]\n,[GLOBJ]\n,[GLSUB]\n,[GLSBL]\n,[GLSBLT]\n,[GLLT]\n,[GLPN]\n,[GLCTRY]\n,[GLFY]\n,[GLFQ]\n,[GLCRCD]\n,[GLCRR]\n,[GLHCRR]\n,[GLHDGJ]\n,[GLAA]\n,[GLU]\n,[GLUM]\n,[GLGLC]\n,[GLRE]\n,[GLEXA]\n,[GLEXR]\n,[GLR1]\n,[GLR2]\n,[GLR3]\n,[GLSFX]\n,[GLODOC]\n,[GLODCT]\n,[GLOSFX]\n,[GLPKCO]\n,[GLOKCO]\n,[GLPDCT]\n,[GLAN8]\n,[GLCN]\n,[GLDKJ]\n,[GLDKC]\n,[GLASID]\n,[GLBRE]\n,[GLRCND]\n,[GLSUMM]\n,[GLPRGE]\n,[GLTNN]\n,[GLALT1]\n,[GLALT2]\n,[GLALT3]\n,[GLALT4]\n,[GLALT5]\n,[GLALT6]\n,[GLALT7]\n,[GLALT8]\n,[GLALT9]\n,[GLALT0]\n,[GLALTT]\n,[GLALTU]\n,[GLALTV]\n,[GLALTW]\n,[GLALTX]\n,[GLALTZ]\n,[GLDLNA]\n,[GLCFF1]\n,[GLCFF2]\n,[GLASM]\n,[GLBC]\n,[GLVINV]\n,[GLIVD]\n,[GLWR01]\n,[GLPO]\n,[GLPSFX]\n,[GLDCTO]\n,[GLLNID]\n,[GLWY]\n,[GLWN]\n,[GLFNLP]\n,[GLOPSQ]\n,[GLJBCD]\n,[GLJBST]\n,[GLHMCU]\n,[GLDOI]\n,[GLALID]\n,[GLALTY]\n,[GLDSVJ]\n,[GLTORG]\n,[GLREG#]\n,[GLPYID]\n,[GLUSER]\n,[GLPID]\n,[GLJOBN]\n,[GLUPMJ]\n,[GLUPMT]\n,[GLABR1]\n,[GLABR2]\n,[GLABR3]\n,[GLABR4]\n,[GLABT1]\n,[GLABT2]\n,[GLABT3]\n,[GLABT4]\n,[GLITM]\n,[GLPM01]\n,[GLPM02]\n,[GLPM03]\n,[GLPM04]\n,[GLPM05]\n,[GLPM06]\n,[GLPM07]\n,[GLPM08]\n,[GLPM09]\n,[GLPM10]\n,[GLBCRC]\n,[GLCRRM]\n,[GLPRGF]\n,[GLTXA1]\n,[GLEXR1]\n,[GLTXITM]\n,[GLACTB]\n,[GLGPF1]\n,[GLACR]\n,[GLDLNID]\n,[GLCKNU]\n,[GLBUPC]\n,[GLAHBU]\n,[GLEPGC]\n,[GLJPGC]\n,[GLRC5]\n,[GLSFXE]\n,[GLOFM]\n FROM [dbo].[F0911]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pocsqlpooleuwest",
+				"poolName": "pocsqlpooleuwest"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

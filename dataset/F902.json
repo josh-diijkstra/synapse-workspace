@@ -1,0 +1,19 @@
+{
+	"name": "F902",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MySql1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "E1"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`f0902`"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

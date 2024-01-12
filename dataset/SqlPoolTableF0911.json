@@ -1,0 +1,618 @@
+{
+	"name": "SqlPoolTableF0911",
+	"properties": {
+		"folder": {
+			"name": "SQL_Pool_Sinks"
+		},
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "GLKCO",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDCT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDOC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLDGJ",
+				"type": "date"
+			},
+			{
+				"name": "GLJELN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLEXTL",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPOST",
+				"type": "nchar"
+			},
+			{
+				"name": "GLICU",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLICUT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDICJ",
+				"type": "date"
+			},
+			{
+				"name": "GLDSYJ",
+				"type": "date"
+			},
+			{
+				"name": "GLTICU",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLCO",
+				"type": "nchar"
+			},
+			{
+				"name": "GLANI",
+				"type": "nchar"
+			},
+			{
+				"name": "GLAM",
+				"type": "nchar"
+			},
+			{
+				"name": "GLAID",
+				"type": "nchar"
+			},
+			{
+				"name": "GLMCU",
+				"type": "nchar"
+			},
+			{
+				"name": "GLOBJ",
+				"type": "nchar"
+			},
+			{
+				"name": "GLSUB",
+				"type": "nchar"
+			},
+			{
+				"name": "GLSBL",
+				"type": "nchar"
+			},
+			{
+				"name": "GLSBLT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLLT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLCTRY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLFY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLFQ",
+				"type": "nchar"
+			},
+			{
+				"name": "GLCRCD",
+				"type": "nchar"
+			},
+			{
+				"name": "GLCRR",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLHCRR",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLHDGJ",
+				"type": "date"
+			},
+			{
+				"name": "GLAA",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GLU",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GLUM",
+				"type": "nchar"
+			},
+			{
+				"name": "GLGLC",
+				"type": "nchar"
+			},
+			{
+				"name": "GLRE",
+				"type": "nchar"
+			},
+			{
+				"name": "GLEXA",
+				"type": "nchar"
+			},
+			{
+				"name": "GLEXR",
+				"type": "nchar"
+			},
+			{
+				"name": "GLR1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLR2",
+				"type": "nchar"
+			},
+			{
+				"name": "GLR3",
+				"type": "nchar"
+			},
+			{
+				"name": "GLSFX",
+				"type": "nchar"
+			},
+			{
+				"name": "GLODOC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLODCT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLOSFX",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPKCO",
+				"type": "nchar"
+			},
+			{
+				"name": "GLOKCO",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPDCT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLAN8",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLCN",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDKJ",
+				"type": "date"
+			},
+			{
+				"name": "GLDKC",
+				"type": "date"
+			},
+			{
+				"name": "GLASID",
+				"type": "nchar"
+			},
+			{
+				"name": "GLBRE",
+				"type": "nchar"
+			},
+			{
+				"name": "GLRCND",
+				"type": "nchar"
+			},
+			{
+				"name": "GLSUMM",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPRGE",
+				"type": "nchar"
+			},
+			{
+				"name": "GLTNN",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT2",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT3",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT4",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT5",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT6",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT7",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT8",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT9",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALT0",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTT",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTU",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTV",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTW",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTX",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTZ",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDLNA",
+				"type": "nchar"
+			},
+			{
+				"name": "GLCFF1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLCFF2",
+				"type": "nchar"
+			},
+			{
+				"name": "GLASM",
+				"type": "nchar"
+			},
+			{
+				"name": "GLBC",
+				"type": "nchar"
+			},
+			{
+				"name": "GLVINV",
+				"type": "nchar"
+			},
+			{
+				"name": "GLIVD",
+				"type": "date"
+			},
+			{
+				"name": "GLWR01",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPO",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPSFX",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDCTO",
+				"type": "nchar"
+			},
+			{
+				"name": "GLLNID",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 3
+			},
+			{
+				"name": "GLWY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLWN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLFNLP",
+				"type": "nchar"
+			},
+			{
+				"name": "GLOPSQ",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "GLJBCD",
+				"type": "nchar"
+			},
+			{
+				"name": "GLJBST",
+				"type": "nchar"
+			},
+			{
+				"name": "GLHMCU",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDOI",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLALID",
+				"type": "nchar"
+			},
+			{
+				"name": "GLALTY",
+				"type": "nchar"
+			},
+			{
+				"name": "GLDSVJ",
+				"type": "date"
+			},
+			{
+				"name": "GLTORG",
+				"type": "nchar"
+			},
+			{
+				"name": "GLREG#",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLPYID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLUSER",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPID",
+				"type": "nchar"
+			},
+			{
+				"name": "GLJOBN",
+				"type": "nchar"
+			},
+			{
+				"name": "GLUPMJ",
+				"type": "date"
+			},
+			{
+				"name": "GLUPMT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLABR1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABR2",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABR3",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABR4",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABT1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABT2",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABT3",
+				"type": "nchar"
+			},
+			{
+				"name": "GLABT4",
+				"type": "nchar"
+			},
+			{
+				"name": "GLITM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLPM01",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM02",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM03",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM04",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM05",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM06",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM07",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM08",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM09",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPM10",
+				"type": "nchar"
+			},
+			{
+				"name": "GLBCRC",
+				"type": "nchar"
+			},
+			{
+				"name": "GLCRRM",
+				"type": "nchar"
+			},
+			{
+				"name": "GLPRGF",
+				"type": "nchar"
+			},
+			{
+				"name": "GLTXA1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLEXR1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLTXITM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLACTB",
+				"type": "nchar"
+			},
+			{
+				"name": "GLGPF1",
+				"type": "nchar"
+			},
+			{
+				"name": "GLACR",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "GLDLNID",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 3
+			},
+			{
+				"name": "GLCKNU",
+				"type": "nchar"
+			},
+			{
+				"name": "GLBUPC",
+				"type": "nchar"
+			},
+			{
+				"name": "GLAHBU",
+				"type": "nchar"
+			},
+			{
+				"name": "GLEPGC",
+				"type": "nchar"
+			},
+			{
+				"name": "GLJPGC",
+				"type": "nchar"
+			},
+			{
+				"name": "GLRC5",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLSFXE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GLOFM",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "F0911"
+		},
+		"sqlPool": {
+			"referenceName": "pocsqlpooleuwest",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

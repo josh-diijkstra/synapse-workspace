@@ -1,0 +1,21 @@
+{
+	"name": "SourceDataset_vcc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PrimaryADLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DR"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "datalakepoceuwest"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

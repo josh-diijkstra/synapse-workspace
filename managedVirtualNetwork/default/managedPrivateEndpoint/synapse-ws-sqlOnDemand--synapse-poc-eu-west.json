@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sqlOnDemand--synapse-poc-eu-west",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/6ca9b374-8807-4361-86d1-b6326b91e2bb/resourceGroups/rg-dataengineering-poc/providers/Microsoft.Synapse/workspaces/synapse-poc-eu-west",
+		"groupId": "sqlOnDemand",
+		"fqdns": [
+			"synapse-poc-eu-west-ondemand.7901dcae-76ff-445b-a6aa-0c073da77209.sql.azuresynapse.net"
+		]
+	}
+}
